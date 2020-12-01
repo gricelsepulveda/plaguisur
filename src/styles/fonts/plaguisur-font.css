@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'plaguisur';
+  src:  url('../../assets/fonts/plaguisur-font/plaguisur.eot?utfd0d');
+  src:  url('../../assets/fonts/plaguisur-font/plaguisur.eot?utfd0d#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/plaguisur-font/plaguisur.woff2?utfd0d') format('woff2'),
+    url('../../assets/fonts/plaguisur-font/plaguisur.ttf?utfd0d') format('truetype'),
+    url('../../assets/fonts/plaguisur-font/plaguisur.woff?utfd0d') format('woff'),
+    url('../../assets/fonts/plaguisur-font/plaguisur.svg?utfd0d#plaguisur') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.pls-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'plaguisur' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pls-arrow-down-icon:before {
+  content: "\e900";
+}
+.pls-arrow-left-icon:before {
+  content: "\e901";
+}
+.pls-arrow-right-icon:before {
+  content: "\e902";
+}
+.pls-arrow-top-icon:before {
+  content: "\e903";
+}
+.pls-badge-icon:before {
+  content: "\e904";
+}
+.pls-chat-icon:before {
+  content: "\e905";
+}
+.pls-close-icon:before {
+  content: "\e906";
+}
+.pls-email-icon:before {
+  content: "\e907";
+}
+.pls-menu-icon:before {
+  content: "\e908";
+}
+.pls-phone-icon:before {
+  content: "\e909";
+}
+.pls-quote-left-icon:before {
+  content: "\e90a";
+}
+.pls-quote-right-icon:before {
+  content: "\e90b";
+}
+.pls-spray-icon:before {
+  content: "\e90c";
+}
