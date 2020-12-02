@@ -1,0 +1,34 @@
+@import "./common/mixins.scss";
+@import "./common/vars.scss";
+
+.pl-section.services{
+    width: 100%;
+    height: auto;
+    @include flex-row-center;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+    padding: 40px 120px 40px 120px;
+    .pl-service{
+        @include flex-col-center;
+        background: $grey;
+        min-width: 300px;
+        width: 300px;
+        height: auto;
+        box-sizing: border-box;
+        padding: 40px;
+        @include shadow;
+        margin: 40px;  
+        * {
+            margin-bottom: 20px!important;
+        }
+        .pls-icon{
+            font-size: 64px;
+            color: $color-1;
+            margin-bottom: 40px!important;
+        }
+        .pl-p{
+            margin-bottom: 0px!important;
+        }      
+    }
+}

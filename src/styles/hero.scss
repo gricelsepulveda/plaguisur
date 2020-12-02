@@ -13,9 +13,12 @@
     }
     .pl-section-main-text{
         width: 50%;
+        box-sizing: border-box;
+        padding: 40px;
         height: 100%;
         background-color: white;
         position: relative;
+        @include flex-row-center;
         &:after{
             content: "";
             position: absolute;
@@ -31,6 +34,101 @@
         @media #{$sm}{
             &:after{
                 display: none;
+            }
+        }
+        .pl-main-text{
+            @include flex-col-center;
+            position: relative;
+            width: 100%;
+            height: auto;
+            .flex{
+                align-items: flex-end;
+                width: auto;
+            }
+            .pl-main-text-p{
+                @include clean-webkit;
+                @include zero-hard;
+                width: 100%;
+                font: {
+                    family: "Gilroy", sans-serif;
+                    size: 32px;
+                    weight: 300px;
+                }
+                text: {
+                    align: left;
+                }
+                line-height: 32px;
+                color: darken($border, 10%);
+            }
+            .pl-main-text-h1{
+                @include clean-webkit;
+                @include zero-soft;
+                width: 100%;
+                font: {
+                    family: "Gilroy", sans-serif;
+                    size: 64px;
+                    weight: 700px;
+                }
+                text: {
+                    align: left;
+                    transform: uppercase;
+                }
+                line-height: 64px;
+                color: $black;
+            }
+            .pl-main-text-h2{
+                @include clean-webkit;
+                @include zero-soft;
+                width: 100%;
+                font: {
+                    family: "Gilroy", sans-serif;
+                    size: 58px;
+                    weight: 700px;
+                }
+                text: {
+                    align: right;
+                    transform: uppercase;
+                }
+                line-height: 48px;
+                margin-left: 10px!important;
+                color: $color-1;
+
+            }
+            .pl-main-text-h3{
+                @include clean-webkit;
+                @include zero-hard;
+                width: 100%;
+                font: {
+                    family: "Gilroy", sans-serif;
+                    size: 36px;
+                    weight: 300px;
+                }
+                text: {
+                    align: right;
+                    transform: uppercase;
+                }
+                line-height: 36px;
+                letter-spacing: 0.25ch;
+                color: $black;
+            }
+            .pl-main-text-span{
+                @include clean-webkit;
+                @include zero-hard;
+                width: 100%;
+                font: {
+                    family: "Gilroy", sans-serif;
+                    size: 16px;
+                    weight: 300px;
+                }
+                text: {
+                    align: center;
+                }
+                line-height: 16px;
+                color: darken($border, 20%);
+            }
+            .ps-button{
+                margin-top: 40px;
+                align-self: flex-end;
             }
         }
     }

@@ -1,0 +1,49 @@
+@import "./common/mixins.scss";
+@import "./common/vars.scss";
+
+.pl-section.us{
+    width: 100%;
+    min-height: 630px;
+    @include flex-col-center;
+    position: relative;
+    overflow: hidden;
+    background: {
+        image: url("https://gricel.sfo2.digitaloceanspaces.com/plaguisur/us-bg.jpg");
+        repeat: no-repeat;
+        size: cover;
+        position: top;
+    };
+    z-index: 0;
+    &:before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        display: inline-block;
+        width: 100%;
+        min-height: 630px;
+        background-color: $white;
+        opacity: 0.25;
+        z-index: -1;
+    }
+    &:after{
+        z-index: 2;
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, $white 0%, transparent 80%);
+    }
+    .pl-h1, .pl-p, .pl-span{
+        width: 50%;
+    }
+    .pl-h1{
+        margin-bottom: 40px!important;
+    }
+    .pl-p{
+        margin-bottom: 20px!important;
+    }
+    .pl-span{
+        margin-bottom: 40px!important;
+    }
+}

@@ -1,3 +1,89 @@
 @import "./common/vars.scss";
 @import "./common/mixins.scss";
-@import "./fonts/plaguisur-font.css"
+@import "./fonts/plaguisur-font.css";
+
+.pl-h1{
+    display: inline-block;
+    font: {
+        family: 'Circular Std';
+        size: 32px;
+        weight: 500;
+    }
+    &.center{
+        text-align: center;
+    }
+    &.right{
+        text-align: right;
+    }
+    &.left{
+        text-align: left;
+    }
+    color: $black;
+    line-height: 32px;
+    @include zero-soft;
+    @include clean-webkit;
+}
+.pl-p {
+    display: inline-block;
+    font: {
+        family: 'Gilroy';
+        size: 16px;
+        weight: 300;
+    }
+    color: $black;
+    line-height: 16px;
+    @include zero-soft;
+    @include clean-webkit;
+    &.center{
+        text-align: center;
+    }
+    &.right{
+        text-align: right;
+    }
+    &.left{
+        text-align: left;
+    }
+}
+.pl-h3{
+    display: inline-block;
+    font: {
+        family: 'Circular Std';
+        size: 18px;
+        weight: 600;
+    }
+    text-transform: uppercase;
+    &.center{
+        text-align: center;
+    }
+    &.right{
+        text-align: right;
+    }
+    &.left{
+        text-align: left;
+    }
+    color: $black;
+    line-height: 18px;
+    @include zero-soft;
+    @include clean-webkit;
+}
+.pl-span {
+    display: inline-block;
+    font: {
+        family: 'Circular Std';
+        size: 18px;
+        weight: 600;
+    }
+    color: $color-2;
+    line-height: 18px;
+    @include zero-soft;
+    @include clean-webkit;
+    &.center{
+        text-align: center;
+    }
+    &.right{
+        text-align: right;
+    }
+    &.left{
+        text-align: left;
+    }
+}
