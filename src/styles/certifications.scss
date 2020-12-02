@@ -1,0 +1,76 @@
+@import "./common/mixins.scss";
+@import "./common/vars.scss";
+
+.pl-section.certifications{
+    width: 100%;
+    min-height: 630px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px;
+    background: {
+        image: url("https://gricel.sfo2.digitaloceanspaces.com/plaguisur/certification-bg.jpg");
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    }
+    position: relative;
+    margin-bottom: 80px;
+    .pl-certifications{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background: $grey;
+        width: 400px;
+        height: auto;
+        box-sizing: border-box;
+        padding: 40px;
+        @include shadow;
+        position: absolute;
+        right: 40px;
+        bottom: -40px;
+        .pl-p{
+            margin-top: 40px!important;
+            margin-bottom: 40px!important;
+        }      
+    }
+    .pl-certifications-list{
+        @include clean-list;
+        @include zero-hard;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        .pl-cert-element{
+            @include flex-row-center;
+            justify-content: flex-start;
+            width: 100%;
+            color: $color-2;
+            font: {
+                family: 'Gilroy', sans-serif;
+                size: 14px;
+                weight: 700;
+            }
+            text: {
+                transform: uppercase;
+            }
+            margin-bottom: 20px!important;
+            &:last-of-type{
+                margin-bottom: 0px;
+            }
+            i {
+                font-size: 18px;
+                color: $color-1;
+                display: inline-block;
+                margin-right: 5px;
+            }
+        }
+    }
+}

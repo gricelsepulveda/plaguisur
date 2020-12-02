@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/Navbar"
 import Hero from "./Hero"
 import Us from "./Us"
 import Services from "./Services"
+import Certifications from "./Certifications"
 import "../styles/home.scss"
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             <Hero/>
             <Us/>
             <Services/>
+            <Certifications/>
         </>
     )
 }
