@@ -1,0 +1,20 @@
+@import "./common/mixins.scss";
+@import "./common/vars.scss";
+
+.pl-section.clients{
+    width: 100%;
+    min-height: 630px;
+    @include flex-col-center;
+    position: relative;
+    overflow: hidden;
+    .pl-h1, .pl-p, .pl-span{
+        width: 50%;
+    }
+    .pl-h1{
+        margin-bottom: 40px!important;
+    }
+    .pls-banner{
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+}

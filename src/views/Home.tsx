@@ -5,7 +5,7 @@ import Hero from "./Hero"
 import Us from "./Us"
 import Services from "./Services"
 import Certifications from "./Certifications"
-import Banner from "../components/Banner/Banner"
+import Clients from "./Clients"
 import "../styles/home.scss"
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
             <Us/>
             <Services/>
             <Certifications/>
-            <Banner dataBrands={[]}/>
+            <Clients/>
         </>
     )
 }
