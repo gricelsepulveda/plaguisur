@@ -40,7 +40,7 @@ export type certification = {
 }
 
 export type article = {
-    icon: string, title: string, description: string
+    icon: string, title: string, description: string, img: string, fullDescription: string
 }
 
 export type heroInfo = {

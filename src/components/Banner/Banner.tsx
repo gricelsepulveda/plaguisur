@@ -91,8 +91,8 @@ const Banner:React.FunctionComponent<BannerProps> = (props) => {
             for (let c = 1; c <= 4; c++) {
                 let ref = ((i * 4) + c) - 1
                 brandGroup[i].push(
-                    <a className="pls-brand-card-wrapper" href={brands[ref].link} target="blank">
-                        <article className="pls-brand-card" key={`brand-${brands[ref].name}-${ref}`}>
+                    <a className="pls-brand-card-wrapper" key={`brand-${brands[ref].name}-${ref}`} href={brands[ref].link} target="blank">
+                        <article className="pls-brand-card">
                             <figure 
                                 className="pls-brand-img"
                                 style={{backgroundImage: `url("${brands[ref].image}")`}}
