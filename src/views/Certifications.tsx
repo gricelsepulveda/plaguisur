@@ -44,6 +44,7 @@ const Certificactions = () => {
                         {TitleCertificationSection.subtitle}
                     </p>
                     <Button
+                        disabled={false}
                         icon="arrow-right"
                         value="consúltanos"
                         color="color-1"

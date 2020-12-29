@@ -8,6 +8,7 @@ type InputProps = {
     TextError: string,
     error: boolean;
     value: string,
+    name: string,
     onChange: (val:string) => void;
 }
 
@@ -25,7 +26,7 @@ const Input:React.FunctionComponent<InputProps> = (props) => {
 
     return (
         <div className={`ps-input ${props.error ? 'error' : ''} ${props.disabled ? 'disabled' : ''}`}>
-            <input placeholder={props.placeholder} onChange={handleChange} className="ps-input-element" type="text" value={value}/>
+            <input name={props.name} placeholder={props.placeholder} onChange={handleChange} className="ps-input-element" type="text" value={value}/>
             {
                 error ? 
                 <span className="ps-input-error">{props.TextError}</span>

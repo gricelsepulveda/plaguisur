@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import "./textarea.scss"
 
 type TextareaProps = {
+    name: string,
     placeholder:string,
     disabled: boolean,
     TextError: string,
@@ -25,7 +26,7 @@ const Textarea:React.FunctionComponent<TextareaProps> = (props) => {
 
     return (
         <div className={`ps-textarea ${props.error ? 'error' : ''} ${props.disabled ? 'disabled' : ''}`}>
-            <textarea placeholder={props.placeholder} onChange={handleChange} className="ps-textarea-element" value={value}/>
+            <textarea name={props.name} placeholder={props.placeholder} onChange={handleChange} className="ps-textarea-element" value={value}/>
             {
                 error ? 
                 <span className="ps-textarea-error">{props.TextError}</span>

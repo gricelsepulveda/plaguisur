@@ -19,6 +19,7 @@ const Us = () => {
                {usData.note}
             </span>
             <Button
+                disabled={false}
                 icon="arrow-down"
                 value="descargar resumen"
                 color="color-1"

@@ -22,6 +22,7 @@ const Hero = () => {
                     <h3 className="pl-main-text-h3">{heroData.lastWords}</h3>
                     <span className="pl-main-text-span">{heroData.claim}</span>
                     <Button
+                        disabled={false}
                         icon="arrow-right"
                         value="cotiza aquí"
                         color="color-1"

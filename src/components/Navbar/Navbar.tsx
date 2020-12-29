@@ -27,11 +27,10 @@ const Navbar:React.FunctionComponent = () => {
 
     const renderLinks = (links:Link[]) => {
         return links.map((ln, ln_index) => (
-            <a href={ln.link} className="ps-nav-links-a" onClick={() => handleLink(ln)}>
+            <a href={ln.link} key={`${ln.name} ${ln_index}`} className="ps-nav-links-a" onClick={() => handleLink(ln)}>
                 <li 
                     onClick={() => handleLink(ln)}
-                    className={`ps-nav-links-li ${active == ln.name ? "active" : ""}`}
-                    key={`${ln.name} ${ln_index}`}
+                    className={`ps-nav-links-li ${active == ln.name ? "active" : ""}`}   
                 >
                     {ln.name}
                 </li>

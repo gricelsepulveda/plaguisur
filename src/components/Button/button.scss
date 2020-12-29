@@ -11,6 +11,12 @@
    position: relative;
    @include flex-row-center;
    @include shadow;
+   @include animate;
+   &.disabled{
+       opacity: 0.25;
+       pointer-events: none;
+       cursor: not-allowed;
+   }
    .ps-button-btn{
        @include flex-row-center;
         border: 0;
