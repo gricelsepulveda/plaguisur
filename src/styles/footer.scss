@@ -15,8 +15,15 @@
     padding-bottom: 20px;
     padding-left: 40px;
     padding-right: 40px;
+    @media #{$sm}{
+        flex-direction: column;
+        justify-content: center;
+    }
     .logo-plaguisur{
         height: 36px;
+        @media #{$sm}{
+            margin-bottom: 20px;
+        }
     }
     .ps-footer-contact{
         display: flex;
@@ -24,12 +31,24 @@
         justify-content: flex-start;
         align-content: flex-start;
         align-items: flex-start;
+        @media #{$sm}{
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
         .ps-footer-contact-info{
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
             align-content: flex-start;
             align-items: flex-start;
+            @media #{$sm}{
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+            }
             a {
                 color: $white;
                 text-decoration: none;
@@ -50,6 +69,9 @@
                 &:last-of-type{
                     margin-right: 0;
                 }
+                @media #{$sm}{
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -62,6 +84,10 @@
         }
         text: {
             align: left;
+        }
+        @media #{$sm}{
+            text-align: center;
+            font-size: 12px;
         }
     }
 }

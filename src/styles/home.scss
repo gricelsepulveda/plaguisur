@@ -2,6 +2,12 @@
 @import "./common/mixins.scss";
 @import "./fonts/plaguisur-font.css";
 
+body {
+    @media #{$sm}{
+        padding-top: 92px;
+    }
+}
+
 .pl-h1{
     display: inline-block;
     font: {

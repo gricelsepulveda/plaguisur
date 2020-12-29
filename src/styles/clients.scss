@@ -7,14 +7,20 @@
     @include flex-col-center;
     position: relative;
     overflow: hidden;
+    @media #{$sm}{
+        min-height: auto;
+    }
     .pl-h1, .pl-p, .pl-span{
         width: 50%;
+        @media #{$sm}{
+            width: 100%;
+        }
     }
     .pl-h1{
         margin-bottom: 40px!important;
     }
     .pls-banner{
-        margin-top: 80px;
+        margin-top: 20px;
         margin-bottom: 40px;
     }
 }

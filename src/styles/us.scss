@@ -14,6 +14,11 @@
         position: top;
     };
     z-index: 0;
+    @media #{$sm}{
+        padding-top: 40px;
+        min-height: auto;
+        padding-bottom: 80px;
+    }
     &:before{
         position: absolute;
         left: 0;
@@ -36,6 +41,9 @@
     }
     .pl-h1, .pl-p, .pl-span{
         width: 50%;
+        @media #{$sm}{
+            width: calc(100% - 40px);
+        }
     }
     .pl-h1{
         margin-bottom: 40px!important;

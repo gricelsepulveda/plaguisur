@@ -8,7 +8,7 @@ import { clientsData, brandsList, quoteData} from "../data/ClientsData"
 const Clients = () => {
 
     return (
-        <section className="pl-section clients">
+        <section className="pl-section clients"  id="clients">
             <h1 className="pl-h1 center">{clientsData.title}</h1>
             <p className="pl-p center">
                 {clientsData.description}

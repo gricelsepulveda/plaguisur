@@ -46,7 +46,7 @@ const Clients = () => {
     }
 
     return (
-        <section className="pl-section contact">
+        <section className="pl-section contact"  id="contact">
             <h1 className="pl-h1 center">{ContactData.title}</h1>
             <p className="pl-p center">
                 {ContactData.description}

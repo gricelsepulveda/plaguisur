@@ -10,7 +10,7 @@ const Hero = () => {
     }
 
     return (
-        <section className="pl-section hero">
+        <section className="pl-section hero" id="home">
             <article className="pl-section-main-text">
                 <div className="pl-main-text">
                     <p className="pl-main-text-p">{heroData.firstWords}</p>

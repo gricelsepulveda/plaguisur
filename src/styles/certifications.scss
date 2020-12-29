@@ -19,6 +19,13 @@
     }
     position: relative;
     margin-bottom: 80px;
+    @media #{$sm}{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+        min-height: auto;
+    }
     .pl-certifications{
         display: flex;
         flex-direction: column;
@@ -34,9 +41,19 @@
         position: absolute;
         right: 40px;
         bottom: -40px;
+        @media #{$sm}{
+            width: 100%;
+            padding: 20px;
+            position: relative;
+            right: initial;
+            bottom: initial;
+        }
         .pl-p{
             margin-top: 40px!important;
             margin-bottom: 40px!important;
+            @media #{$sm}{
+                margin-top: 20px!important;
+            }
         }      
     }
     .pl-certifications-list{

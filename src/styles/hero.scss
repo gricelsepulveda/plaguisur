@@ -10,6 +10,8 @@
     @media #{$sm}{
         @include flex-col-center;
         height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
     .pl-section-main-text{
         width: 50%;
@@ -19,6 +21,11 @@
         background-color: white;
         position: relative;
         @include flex-row-center;
+        @media #{$sm}{
+            width: 100%;
+            padding: 20px;
+            background-color: transparent;
+        }
         &:after{
             content: "";
             position: absolute;
@@ -30,6 +37,9 @@
             border-style: solid;
             border-width: 630px 50px 0 0;
             border-color: white transparent transparent transparent;
+            @media #{$sm}{
+                display: none
+            }
         }
         @media #{$sm}{
             &:after{
@@ -59,6 +69,9 @@
                 }
                 line-height: 32px;
                 color: darken($border, 10%);
+                @media #{$sm}{
+                    font-size: 21px;
+                }
             }
             .pl-main-text-h1{
                 @include clean-webkit;
@@ -75,6 +88,10 @@
                 }
                 line-height: 64px;
                 color: $black;
+                @media #{$sm}{
+                    font-size: 48px;
+                    line-height: 48px;
+                }
             }
             .pl-main-text-h2{
                 @include clean-webkit;
@@ -92,6 +109,10 @@
                 line-height: 48px;
                 margin-left: 10px!important;
                 color: $color-1;
+                @media #{$sm}{
+                    font-size: 32px;
+                    line-height: 32px;
+                }
 
             }
             .pl-main-text-h3{
@@ -110,6 +131,10 @@
                 line-height: 36px;
                 letter-spacing: 0.25ch;
                 color: $black;
+                @media #{$sm}{
+                    font-size: 24px;
+                    line-height: 24px;
+                }
             }
             .pl-main-text-span{
                 @include clean-webkit;
@@ -125,10 +150,17 @@
                 }
                 line-height: 16px;
                 color: darken($border, 20%);
+                @media #{$sm}{
+                    font-size: 14px;
+                    line-height: 14px;
+                }
             }
             .ps-button{
                 margin-top: 40px;
                 align-self: flex-end;
+                @media #{$sm}{
+                    align-self: center;
+                }
             }
         }
     }
@@ -144,6 +176,20 @@
         @include clean-webkit;
         @media #{$sm}{
             width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            &:after{
+                content: '';
+                background-color: rgba($white, 0.85);
+                position: absolute;
+                z-index: 0;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }

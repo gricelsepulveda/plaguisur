@@ -36,6 +36,10 @@
         border-radius: 3px;
         position: relative;
         @include shadow;
+        @media #{$sm}{
+            height: 90vh;
+            overflow-y: hidden;
+        }
         .ps-modal-close-button{
             width: 36px;
             height: 36px;
@@ -53,6 +57,13 @@
             i {
                 color: $color-1;
                 font-size: 18px;
+                @media #{$sm}{
+                    font-size: 12px;
+                }
+            }
+            @media #{$sm}{
+                right: 0;
+                top: 0;
             }
         }
         .ps-modal-title{
@@ -63,8 +74,11 @@
             color: $color-2;
             font: {
                 family: "Circular Std", sans-serif;
-                size: 32∫px;
+                size: 32px;
                 weight: 500;
+            }
+            @media #{$sm}{
+                font-size: 18px;
             }
         }
         .ps-modal-header{
@@ -78,6 +92,10 @@
                 position: center;
                 repeat: no-repeat;
             }
+            @media #{$sm}{
+                height: 100px;
+                max-height: 100px;
+            }
         }
         .ps-modal-description{
             box-sizing: border-box;
@@ -85,6 +103,10 @@
             padding-left: 20px;
             padding-right: 20px;
             color: $black;
+            @media #{$sm}{
+                max-height: 60%;
+                overflow-y: scroll;
+            }
             font: {
                 family: "Gilroy", sans-serif;
                 size: 16px;

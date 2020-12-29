@@ -33,7 +33,7 @@ const Services = () => {
 
     return (
         <>
-            <section className="pl-section services">
+            <section className="pl-section services"  id="services">
                 {
                     renderArticles()
                 }

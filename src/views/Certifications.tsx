@@ -31,7 +31,7 @@ const Certificactions = () => {
 
     return (
         <>
-            <section className="pl-section certifications">
+            <section className="pl-section certifications"  id="certifications">
                 <article className="pl-certifications">
                     <h1 className="pl-h1 center">{TitleCertificationSection.title}</h1>
                     <p className="pl-p left">

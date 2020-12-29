@@ -9,20 +9,27 @@
     overflow: hidden;
     padding-bottom: 80px;
     background-color: $grey;
+    @media #{$sm}{
+        min-height: initial;
+        padding-top: 40px;
+    }
     .pl-h1, .pl-p, .pl-span{
         width: 50%;
+        @media #{$sm}{
+            width: calc(100% - 40px);
+        }
     }
     .pl-h1{
         margin-bottom: 40px!important;
-    }
-    .pls-banner{
-        margin-top: 80px;
-        margin-bottom: 40px;
     }
     .pl-contact-form{
         margin-top: 80px;
         width: 380px;
         @include flex-col-center;
+        @media #{$sm}{
+            width: 90%;
+            margin-top: 40px;
+        }
         .ps-input, .ps-textarea {
             margin-bottom: 20px;
             width: 100%;

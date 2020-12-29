@@ -8,8 +8,8 @@
     &:after{
         content: '';
         display: inline-block;
-        height: calc(36px + 6px);
-        width: calc(100% + 22px);
+        height: calc(36px);
+        width: calc(100%);
         border: 3px solid rgba($white, 0.5);
         position: absolute;
         left: -3px;
@@ -29,6 +29,7 @@
         padding-right: 10px;
         line-height: 36px;
         color: $black;
+        box-sizing: border-box;
         font: {
             family: "Circular Std", sans-serif;
             size: 18px;

@@ -13,17 +13,7 @@ const Navbar:React.FunctionComponent = () => {
 
     const handleLink = (link:Link) => {
         setActive(link.name)
-        if (link.link.split("#").length < 2){
-            window.open(link.link, "_blank")
-        }
-        else {
-
-            const divElementPosition = document.getElementById(link.link)
-            // @ts-ignore
-            const pixelToScroll:number = divElementPosition != null ? divElementPosition.clientTop != undefined ? divElementPosition : 0 : 0
-
-            window.scrollBy(0, pixelToScroll) //Scrolls to position
-        }
+        setOpenMenu(false)
     }
 
     const links:Link[] = [
@@ -37,13 +27,15 @@ const Navbar:React.FunctionComponent = () => {
 
     const renderLinks = (links:Link[]) => {
         return links.map((ln, ln_index) => (
-            <li 
-                onClick={() => handleLink(ln)}
-                className={`ps-nav-links-li ${active == ln.name ? "active" : ""}`}
-                key={`${ln.name} ${ln_index}`}
-            >
-                {ln.name}
-            </li>
+            <a href={ln.link} className="ps-nav-links-a" onClick={() => handleLink(ln)}>
+                <li 
+                    onClick={() => handleLink(ln)}
+                    className={`ps-nav-links-li ${active == ln.name ? "active" : ""}`}
+                    key={`${ln.name} ${ln_index}`}
+                >
+                    {ln.name}
+                </li>
+            </a>
         ))
     }
 

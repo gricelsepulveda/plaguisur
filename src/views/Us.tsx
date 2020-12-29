@@ -10,7 +10,7 @@ const Us = () => {
     }
 
     return (
-        <section className="pl-section us">
+        <section className="pl-section us"  id="us">
             <h1 className="pl-h1 center">{usData.title}</h1>
             <p className="pl-p center">
                 {usData.description}
