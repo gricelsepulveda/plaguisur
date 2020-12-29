@@ -1,45 +1,10 @@
 //IMPORTS
 import React from "react"
+import {article} from "../types/types"
+import articles from "../data/ServicesData"
 import "../styles/services.scss"
 
-interface article {
-    icon: string, title: string, description: string
-}
-
 const Services = () => {
-
-    const articles:article[] = [
-        {
-            icon: "spray",
-            title: "Nombre del servicio",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula pharetra nibh ultrices scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula pharetra."
-        },
-        {
-            icon: "spray",
-            title: "Nombre del servicio",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula pharetra nibh ultrices scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula pharetra."
-        },
-        {
-            icon: "spray",
-            title: "Nombre del servicio",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula pharetra nibh ultrices scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula pharetra."
-        },
-        {
-            icon: "spray",
-            title: "Nombre del servicio",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula pharetra nibh ultrices scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula pharetra."
-        },
-        {
-            icon: "spray",
-            title: "Nombre del servicio",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula pharetra nibh ultrices scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula pharetra."
-        },
-        {
-            icon: "spray",
-            title: "Nombre del servicio",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula pharetra nibh ultrices scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula pharetra."
-        }
-    ]
 
     const renderArticles = () => {
         return articles.map((art:article, indArt:number) => 

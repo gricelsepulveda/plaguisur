@@ -2,7 +2,7 @@
 import React from "react"
 import "./button.scss"
 
-interface ButtonProps {
+type ButtonProps = {
     icon: string, name: string, value: string, color: string, action: (name:string) => void;
 }
 

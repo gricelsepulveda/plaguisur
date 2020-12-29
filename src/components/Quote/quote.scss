@@ -1,0 +1,61 @@
+@import "../../styles/common/mixins.scss";
+@import "../../styles/common/vars.scss";
+
+.ps-quote{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    width: 80%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $border;
+    &:last-of-type{
+        border-bottom: 0;
+    }
+    .ps-quote-img{
+        min-width: 96px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .ps-quote-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        margin-left: 20px;
+        .ps-quote-title{
+            color: $black;
+            text-align: left;
+            font: {
+                family: 'Circular Std';
+                size: 32px;
+                weight: 500;
+            }
+            .pls-icon{
+                color: $color-1;
+                font-size: 32px;
+                display: inline-block;
+                &.pls-quote-left-icon{
+                    margin-right: 10px;
+                }
+                &.pls-quote-right-icon{
+                    margin-left: 10px;
+                }
+            }
+        }
+        .ps-quote-text{
+            color: $black;
+            text-align: left;
+            font: {
+                family: "Gilroy", sans-serif;
+                size: 16px;
+                weight: 300;
+            }
+        }
+    }
+}

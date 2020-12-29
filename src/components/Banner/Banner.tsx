@@ -1,19 +1,24 @@
 //IMPORTS
-import React, { useState } from "react"
+import React, { useState, useEffect} from "react"
+import {Brand} from "../../types/types"
 import "./banner.scss"
 
-interface Brand {
-    name: string,
-    image: string,
-    link: string
-}
-
-interface BannerProps {
+type BannerProps = {
     dataBrands: Brand[]
 }
 
 const Banner:React.FunctionComponent<BannerProps> = (props) => {
     const [active, setActive] = useState<number>(0)
+
+    const animation =
+        setInterval(() => {
+            if (active < 2){
+                setActive(active + 1)
+            } else {
+                setActive(0)
+            }
+            clearInterval(animation)
+        }, 2000)
 
     const brandsList:Brand[] = [
         {
@@ -109,7 +114,11 @@ const Banner:React.FunctionComponent<BannerProps> = (props) => {
             </div>
         ))
     }
-    
+    const handleClick = (x:number) => {
+        setActive(x)
+        clearInterval(animation)
+    }
+
     const renderControls = () => {
         let controls:JSX.Element[] = []
         for (let x=0; x < 3; x++){
@@ -117,7 +126,7 @@ const Banner:React.FunctionComponent<BannerProps> = (props) => {
                 <button 
                     type="button"
                     className={`pls-banner-control ${active == x ? 'active' : ''}`}
-                    onClick={() => setActive(x)}
+                    onClick={() => handleClick(x)}
                     key={`btn-control-${x}`}
                 />
             )
@@ -125,9 +134,15 @@ const Banner:React.FunctionComponent<BannerProps> = (props) => {
         return controls
     }
 
+    useEffect(() => {
+        animation
+    }, [active])
+
     return (
-        <div className="pls-banner" style={{paddingRight: `${active * (100 * active)}%`}}>
-            { renderBrands(brandsList) }
+        <div className="pls-banner">
+            <div className="pls-banner-wraapper" style={{left: `-${active * 100}%`}}>
+                { renderBrands(props.dataBrands.length < 0 ? props.dataBrands : brandsList) }
+            </div>
             <nav className="pls-banner-controls">
                 {
                     renderControls()

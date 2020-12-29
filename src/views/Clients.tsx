@@ -2,19 +2,19 @@
 import React from "react"
 import Banner from "../components/Banner/Banner"
 import "../styles/clients.scss"
+import Quote from "../components/Quote/Quote"
+import { clientsData, brandsList, quoteData} from "../data/ClientsData"
 
 const Clients = () => {
 
-    const handleUs = () => {
-    }
-
     return (
         <section className="pl-section clients">
-            <h1 className="pl-h1 center">Nuestros clientes</h1>
+            <h1 className="pl-h1 center">{clientsData.title}</h1>
             <p className="pl-p center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula pharetra nibh ultrices scelerisque commodo. Enim pharetra, justo, felis integer sed.
+                {clientsData.description}
             </p>
-            <Banner dataBrands={[]}/>
+            <Banner dataBrands={brandsList}/>
+            <Quote data={quoteData}/>
         </section>
     )
 }

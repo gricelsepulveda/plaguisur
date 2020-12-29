@@ -1,0 +1,34 @@
+@import "./common/mixins.scss";
+@import "./common/vars.scss";
+
+.pl-section.contact{
+    width: 100%;
+    min-height: 630px;
+    @include flex-col-center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 80px;
+    background-color: $grey;
+    .pl-h1, .pl-p, .pl-span{
+        width: 50%;
+    }
+    .pl-h1{
+        margin-bottom: 40px!important;
+    }
+    .pls-banner{
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    .pl-contact-form{
+        margin-top: 80px;
+        width: 380px;
+        @include flex-col-center;
+        .ps-input, .ps-textarea {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .ps-button{
+            margin-bottom: 0px;
+        }
+    }
+}

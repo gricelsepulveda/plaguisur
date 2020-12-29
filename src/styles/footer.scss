@@ -1,0 +1,67 @@
+@import "./common/mixins.scss";
+@import "./common/vars.scss";
+
+.ps-footer{
+    width: 100vw;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: $color-2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    .logo-plaguisur{
+        height: 36px;
+    }
+    .ps-footer-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        .ps-footer-contact-info{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+            a {
+                color: $white;
+                text-decoration: none;
+                font: {
+                    family: "Circular Std", sans-serif;
+                    size: 28px;
+                    weight: 500;
+                }
+                text: {
+                    align: left;
+                }
+                i {
+                    display: inline-block;
+                    margin-right: 5px;
+                    color: $color-1;
+                }
+                margin-right: 20px;
+                &:last-of-type{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .ps-footer-contact-p{
+        color: $white;
+        font: {
+            family: "Gilroy", sans-serif;
+            size: 16px;
+            weight: 300;
+        }
+        text: {
+            align: left;
+        }
+    }
+}

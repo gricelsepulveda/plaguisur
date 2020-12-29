@@ -3,14 +3,23 @@
 
 .pls-banner{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
     overflow: hidden;
     position: relative;
-    height: calc(100% + 40px);
+    padding-bottom: 80px;
+    height: 220px;
+    .pls-banner-wraapper{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        @include animate;
+    }
     .pls-banner-slide{
         width: 100%;
         min-width: 100%;
@@ -47,11 +56,25 @@
         @include flex-row-center;
         position: absolute;
         left: 0px;
-        top: 0px;
+        bottom: 2px;
+        z-index: 1;
         .pls-banner-control{
+            cursor: pointer;
+            outline: 0;
             width: 36px;
             height: 36px;
+            border-radius: 18px;
             @include flex-col-center;
+            margin-right: 20px;
+            border: 5px solid $white;
+            @include shadow;
+            background-color: $border;
+            &.active{
+                background-color: $color-1;
+            }
+            &:last-of-type{
+                margin-right: 0;
+            }
         }
     }
 }

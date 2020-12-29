@@ -1,6 +1,7 @@
 //IMPORTS
 import React from "react"
 import Button from "../components/Button/Button"
+import heroData from "../data/HeroData"
 import "../styles/hero.scss"
 
 const Hero = () => {
@@ -12,14 +13,14 @@ const Hero = () => {
         <section className="pl-section hero">
             <article className="pl-section-main-text">
                 <div className="pl-main-text">
-                    <p className="pl-main-text-p">vive</p>
-                    <h1 className="pl-main-text-h1">tus espacios</h1>
+                    <p className="pl-main-text-p">{heroData.firstWords}</p>
+                    <h1 className="pl-main-text-h1">{heroData.secondWords}</h1>
                     <div className="flex row center">
-                        <p className="pl-main-text-p">con la</p>
-                        <h2 className="pl-main-text-h2">naturaleza</h2>
+                        <p className="pl-main-text-p">{heroData.thirdWords}</p>
+                        <h2 className="pl-main-text-h2">{heroData.fourthWords}</h2>
                     </div>
-                    <h3 className="pl-main-text-h3">en equilibrio</h3>
-                    <span className="pl-main-text-span">Somos expertos en higiene abiental y control de plagas</span>
+                    <h3 className="pl-main-text-h3">{heroData.lastWords}</h3>
+                    <span className="pl-main-text-span">{heroData.claim}</span>
                     <Button
                         icon="arrow-right"
                         value="cotiza aquí"

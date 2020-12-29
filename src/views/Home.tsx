@@ -6,6 +6,8 @@ import Us from "./Us"
 import Services from "./Services"
 import Certifications from "./Certifications"
 import Clients from "./Clients"
+import Contact from "./Contact"
+import Footer from "./Footer"
 import "../styles/home.scss"
 
 const Home = () => {
@@ -17,6 +19,8 @@ const Home = () => {
             <Services/>
             <Certifications/>
             <Clients/>
+            <Contact/>
+            <Footer/>
         </>
     )
 }

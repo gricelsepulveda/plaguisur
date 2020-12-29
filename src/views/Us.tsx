@@ -1,6 +1,7 @@
 //IMPORTS
 import React from "react"
 import Button from "../components/Button/Button"
+import usData from "../data/UsData"
 import "../styles/us.scss"
 
 const Us = () => {
@@ -10,12 +11,12 @@ const Us = () => {
 
     return (
         <section className="pl-section us">
-            <h1 className="pl-h1 center">Quiénes somos</h1>
+            <h1 className="pl-h1 center">{usData.title}</h1>
             <p className="pl-p center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula pharetra nibh ultrices scelerisque commodo. Enim pharetra, justo, felis integer sed. Lacus rutrum et auctor pellentesque ac pulvinar amet commodo cras. Amet maecenas scelerisque vulputate adipiscing bibendum enim. Massa risus pulvinar varius purus, nunc nec. Sodales libero pharetra adipiscing vitae ut purus. Id tristique in blandit faucibus elit ornare nec neque. Elementum commodo at elementum sed ornare molestie ipsum congue cursus
+                {usData.description}
             </p>
             <span className="pl-span center">
-                Conoce nuestra misión, visión y garantías en nuestro resumen empresarial
+               {usData.note}
             </span>
             <Button
                 icon="arrow-down"
