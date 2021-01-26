@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'CircularStd';
+    src: url('../../assets/fonts/circularstd-webfont/CircularStd-BlackItalic.eot');
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url('../../assets/fonts/circularstd-webfont/CircularStd-Bold.eot');
+    src: url('../../assets/fonts/circularstd-webfont/CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/circularstd-webfont/CircularStd-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/circularstd-webfont/CircularStd-Bold.woff') format('woff'),
+        url('../../assets/fonts/circularstd-webfont/CircularStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url('../../assets/fonts/circularstd-webfont/CircularStd-BoldItalic.eot');
+    src: url('../../assets/fonts/circularstd-webfont/CircularStd-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/circularstd-webfont/CircularStd-BoldItalic.woff2') format('woff2'),
+        url('../../assets/fonts/circularstd-webfont/CircularStd-BoldItalic.woff') format('woff'),
+        url('../../assets/fonts/circularstd-webfont/CircularStd-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url('../../assets/fonts/circularstd-webfont/CircularStd-Medium.eot');
+    src: url('../../assets/fonts/circularstd-webfont/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/circularstd-webfont/CircularStd-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/circularstd-webfont/CircularStd-Medium.woff') format('woff'),
+        url('../../assets/fonts/circularstd-webfont/CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    src: url('../../assets/fonts/circularstd-webfont/CircularStd-MediumItalic.eot');
+    src: url('../../assets/fonts/circularstd-webfont/CircularStd-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/circularstd-webfont/CircularStd-MediumItalic.woff2') format('woff2'),
+        url('../../assets/fonts/circularstd-webfont/CircularStd-MediumItalic.woff') format('woff'),
+        url('../../assets/fonts/circularstd-webfont/CircularStd-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+

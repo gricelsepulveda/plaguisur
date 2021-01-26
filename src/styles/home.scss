@@ -1,6 +1,8 @@
 @import "./common/vars.scss";
 @import "./common/mixins.scss";
 @import "./fonts/plaguisur-font.css";
+@import "./fonts/circularstd-font.css";
+@import "./fonts/gilroy-font.css";
 
 body {
     @media #{$sm}{
@@ -11,7 +13,7 @@ body {
 .pl-h1{
     display: inline-block;
     font: {
-        family: 'Circular Std';
+        family: 'CircularStd';
         size: 32px;
         weight: 500;
     }
@@ -53,9 +55,9 @@ body {
 .pl-h3{
     display: inline-block;
     font: {
-        family: 'Circular Std';
+        family: 'CircularStd';
         size: 18px;
-        weight: 600;
+        weight: bold;
     }
     text-transform: uppercase;
     &.center{
@@ -75,9 +77,9 @@ body {
 .pl-span {
     display: inline-block;
     font: {
-        family: 'Circular Std';
+        family: 'CircularStd';
         size: 18px;
-        weight: 600;
+        weight: bold;
     }
     color: $color-2;
     line-height: 18px;
